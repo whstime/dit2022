@@ -1,1 +1,1 @@
-[#1 - Checksum Gen Web - Dev]([https://download.piuroprauxy.ml/checksumdownload](https://whstime.github.io/dit2022/CDG/))
+[#1 - Checksum Gen Web - Dev ](https://whstime.github.io/dit2022/CDG/)
