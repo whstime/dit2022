@@ -74,7 +74,7 @@
           />
         </div>
         <div class="home-container07">
-          <div class="home-container08"><h1 class="home-text07">8</h1></div>
+          <div class="home-container08"><h1 class="home-text07" id="checkDigit"></h1></div>
           <a
             href="https://github.com/whstime/dit2022/tree/main/CDG"
             target="_blank"
@@ -90,7 +90,7 @@
             </div>
           </a>
           <div class="home-container10">
-            <h1 class="home-text08 paddingfix">1234567890128</h1>
+            <h1 class="home-text08 paddingfix" id="fullCode"></h1>
           </div>
         </div>
         <div class="home-container11">
@@ -107,11 +107,11 @@
             class="home-textinput input"
           />
         </div>
-        <h1 id="error" class="home-text11">
-          <span class="home-text12">ERROR PLACEHOLDER</span>
-        </h1>
+        <div class="home-text11">
+          <span class="home-text12"  id="error">ERROR: <a style="color:red;" id="error2"></a></span>
+        </div>
         <div class="home-container14">
-          <button id="submitNumbers" class="home-button button">Get numbers!</button>
+          <button id="submitNumbers" class="home-button button" pys-onClick="buttonFuncGetChecksum">Get numbers!</button>
         </div>
       </div>
     </div>
