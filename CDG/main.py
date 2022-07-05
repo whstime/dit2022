@@ -1,6 +1,12 @@
-
 from js import alert
 import string
+from pyodide import create_proxy
+inputField = document.getElementById('userinputchecksum')
+def keyDownFunc(e):
+ if e.key == 'Enter':
+  buttonFuncGetChecksum()
+ckd = create_proxy(keyDownFunc)
+inputField.addEventListener("keydown",ckd)
 def buttonFuncGetChecksum(*args,**kwargs):
  console.log('[DEUBG] function called')
  twelveDigitCode = Element('userinputchecksum').element.value
@@ -35,8 +41,11 @@ def buttonFuncGetChecksum(*args,**kwargs):
   sumResult = listOfDigits[0] + Two + listOfDigits[2] + Four + listOfDigits[4] + Six + listOfDigits[6] + Eight + listOfDigits[8] + Ten + listOfDigits[10] + Twelve
   sumList = [int(a) for a in str(sumResult)]
   checkNumber = str(10 - sumList[-1])
-  if checkNumber == 10:
-   checkNumber = 0
+  if checkNumber == '10':
+   console.log('[DEUBG: CHECKNUMBER IS 10')
+   checkNumber = '0'
+  else:
+   console.log('[DEUBG: CHECKNUMBER IS NOT 10')
   Element('error2').element.innerText = ''
   pyscript.write('checkDigit', checkNumber)
   pyscript.write('fullCode', twelveDigitCode + checkNumber)
