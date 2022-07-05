@@ -14,22 +14,19 @@ def buttonFuncGetChecksum(*args,**kwargs):
   Element('error2').element.innerText = "Can't work with nothing."
   pyscript.write('checkDigit', "")
   pyscript.write('fullCode', "")
- elif any(c in string.ascii_letters for c in twelveDigitCode):
+  Element('error').element.style.opacity = ''
+  console.log('[DEBUG] Opacity for ERROR tag:', Element('error').element.style.opacity)
+ elif any(c in string.ascii_letters for c in twelveDigitCode) or any(c in string.punctuation for c in twelveDigitCode) or any(c in string.whitespace for c in twelveDigitCode):
   Element('error2').element.innerText = 'Numbers only!'
   pyscript.write('checkDigit', "")
   pyscript.write('fullCode', "")
- elif any(c in string.punctuation for c in twelveDigitCode):
-  Element('error2').element.innerText = 'Numbers only!'
-  pyscript.write('checkDigit', "")
-  pyscript.write('fullCode', "")
- elif any(c in string.whitespace for c in twelveDigitCode):
-  Element('error2').element.innerText = 'Numbers only!'
-  pyscript.write('checkDigit', "")
-  pyscript.write('fullCode', "")
+  Element('error').element.style.opacity = ''
+  console.log('[DEBUG] Opacity for ERROR tag:', Element('error').element.style.opacity)
  elif len(twelveDigitCode) != 12:
   Element('error2').element.innerText = 'Twelve digit codes only!'
   pyscript.write('checkDigit', "")
   pyscript.write('fullCode', "")
+  Element('error').element.style.opacity = ''
  else:
   listOfDigits = [int(a) for a in str(twelveDigitCode)]
   Two = listOfDigits[1] * 3
@@ -47,5 +44,7 @@ def buttonFuncGetChecksum(*args,**kwargs):
   else:
    console.log('[DEUBG: CHECKNUMBER IS NOT 10')
   Element('error2').element.innerText = ''
+  Element('error').element.style.opacity = '0'
+  console.log('[DEBUG]', Element('error').element.style.opacity)
   pyscript.write('checkDigit', checkNumber)
   pyscript.write('fullCode', twelveDigitCode + checkNumber)
