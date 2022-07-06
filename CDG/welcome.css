@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap');
+body {
+    background-color: rgb(136, 135, 135) !important;
+    height: 100vh;
+    font-family: 'Arima', cursive !important;
+}
+.roundedoutlinewhite {
+    outline: 2px solid white;border-radius: 25px;
+}
+
+.colImg {
+    width: 75%;
+}
+
+.sb {
+    font-weight: 300 !important;
+}
+
+.indigoBtn1 {
+    margin: 25px; background-color: indigo; color: rgb(245, 212, 212);border-radius: 10px;border-color:white;
+}
+
+.indigoBtn1:hover {
+    background-color: rgb(113, 6, 189);
+    color: rgb(0, 0, 0);
+    border-color:rgb(0, 0, 0);
+}
