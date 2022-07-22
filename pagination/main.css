@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+
+body {
+ background-color: #556882;
+ font-family: 'Edu SA Beginner', cursive;
+}
+
+a.link {
+    color: #093e99;
+    text-decoration: underline;
+}
+
+h1.mainHeader {
+    position: relative;
+    top: 20px;
+    font-size: 48px;
+}
+
+.paginationContainer {
+    height: 400px;
+    background-color: #419cf1;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    margin-top: 55px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    outline: auto;
+}
+
+.buttonContainer {
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px
+}
+
+button.btnOutline {
+    outline: white auto;
+    width: 25%;
+    height: 60px;
+    font-size: 200%;
+    color: black;
+}
+
+.paginationContent {
+    font-size: 200%;
+}
+
+.imgPag {
+    width: 50%;
+    height: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width:757px) {
+    .imgPag {
+        width: 35%;
+        height: 35%;
+        margin: auto;
+    }
+
+    .paginationContainer {
+        max-height: 370px;
+    }
+
+    h1.mainHeader {
+        position: relative;
+        top: 20px;
+        font-size: 32px;
+    }
+
+    button.btnOutline {
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width:1815px) {
+    .paginationContainer {
+        width: 1362px;
+    }
+}
+
+@media screen and (max-width:1333px) {
+    button.btnOutline {
+        width: 12.5%;
+    }
+
+    .buttonContainer {
+        max-width: 75%
+    }
+}
+
+@media screen and (max-width:960px) {
+    button.btnOutline {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    button.btnOutline {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    button.btnOutline {
+        height: 45px;
+    }
+
+    .paginationContent {
+        font-size: 175%;
+    }
+
+    button.btnOutline {
+        font-size: 150%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple pagination with PY</title>
+    <meta name="title" content="Simple pagination with Pyscript">
+    <meta name="description" content="This is a fun little project I made with <py-script>!">
+    <meta name="og:title" content="Simple pagination with Pyscript">
+    <meta name="og:description" content="This is a fun little project I made with <py-script>!">   
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="manifest" href="imgs/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <py-script src="main.py"></py-script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body id="bodyElement">
+    <h1 class="text-center mainHeader">Hello, welcome to simple pagination with py (<a href="https://pyscript.net/" class="link" title="Pyscript webpage." >pyscript</a>)</h1>
+    <div class="paginationContainer">
+        <a class="paginationContent" id="paginationContent">    
+            <p class="text-center">print(<span style="color: orange;">'Hello World'</span>) <span style="color: red;">!=</span> print(<span style="color: orange;">'Hello'<span style="color: black;">+</span>'World'</span>)</p>
+            <img class="imgPag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1200px-Earth_Western_Hemisphere_transparent_background.png"></img>
+        </a>   
+    </div>
+    <div class="flex justify-between buttonContainer">
+        <button pys-onClick="backPage" class="btnOutline bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded;" id="backBtn" style="visibility: hidden;" title="Previous Page">⤎</button>
+        <button pys-onClick="nextPage" class="btnOutline bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded;"id="fowardBtn" title="Next Page">⤏</button>
+    </div>
+</body>
+</html>
