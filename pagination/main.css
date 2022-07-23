@@ -52,6 +52,38 @@ button.btnOutline {
     margin: auto;
 }
 
+@media screen and (min-height:920px) {
+    .paginationContainer {
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width:632px) {
+    .paginationContent2ndPageText {
+    font-size: 75%;
+}
+
+}
+
+@media screen and (max-width:414px) {
+    .paginationContent2ndPageText {
+    font-size: 63%;
+}
+
+}
+
+@media screen and (max-width:300px) {
+    .paginationContent2ndPageText {
+        font-size: 75%;
+    }
+
+    .paginationContent1stPageText {
+    font-size: 145%;
+}
+
+}
+
 @media screen and (max-width:757px) {
     .imgPag {
         width: 35%;
