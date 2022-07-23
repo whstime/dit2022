@@ -68,10 +68,6 @@ button.btnOutline {
         top: 20px;
         font-size: 32px;
     }
-
-    button.btnOutline {
-        font-size: 125%;
-    }
 }
 
 @media screen and (min-width:1815px) {
